@@ -1,0 +1,329 @@
+* { marigin: 0; padding: 0;}
+body {
+	font-family: "맑은 고딕",Gothid,sans-serif;
+	background-color: #E6E6E6;
+	margin: 0 auto;
+	padding: 0px;
+	width: 1240px;
+}
+li { list-style: none; }
+a { text-decoration: none; }
+img { border: 0; }
+#page-wrapper {
+	background-color: white;
+	padding: 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+
+.main-pic {
+	width: 1200px;
+}
+.master-title-kor {
+	font-size: 45px;
+	font-weight: bold; 
+	font-family: 'Nanum Gothic Coding', monospace;
+	letter-spacing: 10px;
+	word-spacing: 30px;
+	margin: 80px 0 0 0;
+}
+.master-title-eng {
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	word-spacing: 80px;
+	margin: 0 0 20px 0;
+}
+.master-description {
+	font-size: 22px;
+	font-family: 'Nanum Gothic Coding', monospace;
+	letter-spacing: 2px;
+	word-spacing: 15px;
+	margin: 40px 0 80px 0;
+}
+
+
+#main {
+	overflow: hidden;
+	margin-top: 60px;
+}
+#content {
+	width: 880px;
+	margin-right: 20px;
+	float: left;
+}
+#main-navigation {
+	display: block;
+	overflow: hidden;
+	height: 80px;
+	margin-bottom: 60px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+.outer-menu-item {
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	padding: 5px 15px;
+	height: 40px;
+	width: 240px;
+	float: left;
+	border-width: 1px;
+	border-color: black;
+}
+.outer-menu-item:hover {
+	background-color: #fcf2f2;
+}
+#outer-menu > li:first-child {
+	margin-left: 35px;
+}
+#outer-menu > li:last-child {
+	margin-right: 35px;
+}
+
+
+#content input:nth-of-type(1) { display: none; }
+#content input:nth-of-type(1) ~ div:nth-of-type(1) { display: none; }
+#content input:nth-of-type(1):checked ~ div:nth-of-type(1) { display: block; }
+#content input:nth-of-type(1):checked ~ ul.tabb-title > label:nth-of-type(1) {}
+
+#content input:nth-of-type(2) { display: none; }
+#content input:nth-of-type(2) ~ div:nth-of-type(2) { display: none; }
+#content input:nth-of-type(2):checked ~ div:nth-of-type(2) { display: block; }
+#content input:nth-of-type(2):checked ~ ul.tabb-title > label:nth-of-type(2) {}
+
+#content input:nth-of-type(3) { display: none; }
+#content input:nth-of-type(3) ~ div:nth-of-type(3) { display: none; }
+#content input:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; }
+#content input:nth-of-type(3):checked ~ ul.tabb-title > label:nth-of-type(3) {}
+
+
+#main-content {
+	overflow: hidden;
+}
+#me-in-me {
+	overflow: hidden;
+}
+.content-title {
+	margin-bottom: 20px;
+	height: 95px;
+	border-bottom: 1px solid;
+	font-family: 'Nanum Gothic Coding', monospace;
+}
+.article-title {
+	margin: 0;
+}
+.article-intro {
+	font-size: 18px;
+}
+.body-pic {
+	width: 880px;
+	height: 279px;
+	margin-bottom: 30px;
+}
+
+
+.me {
+	width: 860px;
+	display: block;
+	margin-bottom: 20px;
+	border: 1px solid;
+	border-radius: 20px;
+}
+.mark {
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+	display: block;
+	float: left;
+	width: 20px;
+	margin: 10px 10px 10px 50px;
+}
+.question {
+	display: block;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.answer {
+	display: block;
+	overflow: hidden;
+}
+.question-content {
+	display: block;
+	float: left;
+	height: 23px;
+}
+.answer-content {
+	display: block;
+	float: left;
+	height: 23px;
+	margin-top: 14px;
+}
+
+
+input:nth-of-type(1) { display: none; }
+input:nth-of-type(1) ~ div:nth-of-type(1) { display: none; }
+input:nth-of-type(1):checked ~ div:nth-of-type(1) { display: block; }
+input:nth-of-type(1):checked ~ section.tab-title > label:nth-of-type(1) {
+	background: #fcf2f2;
+	color: black;
+}
+input:nth-of-type(2) { display: none; }
+input:nth-of-type(2) ~ div:nth-of-type(2) { display: none; }
+input:nth-of-type(2):checked ~ div:nth-of-type(2) { display: block; }
+input:nth-of-type(2):checked ~ section.tab-title > label:nth-of-type(2) {
+	background: #fcf2f2;
+	color: black;
+}
+section.tab-title{ overflow: hidden; }
+section.tab-title > label {
+	display: block;
+	float: left;
+	width: 350px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid black;
+	background: white;
+}
+.tab-item {
+	margin-bottom: 35px;
+}
+.tab-item > ul {
+	padding: 0;
+}
+.item {
+	overflow: hidden;
+	width: 450px;
+	padding: 10px 12px 10px 240px;
+	margin-left: 80px;
+	border: 1px solid black;
+}
+.thumbnail img {
+	width: 85px;
+	height: 85px;
+	float: left;
+	margin-top: 10px;
+}
+.description {
+	float: left;
+	margin: 10px 0 10px 20px;
+	width: 100px;
+}
+.description > p {
+	display: block;
+	width: 200px;
+	font-size: 15px;
+	color: black;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+#my-memory {
+	height: 830px;
+	border-bottom: 1px solid;
+}
+.memory {
+	width: 700px;
+	margin: 30px 40px 50px 40px;
+}
+.memory pre {
+	font-family: '맑은 고딕';
+	font-size: 15px;
+	letter-spacing: 2px;
+	margin-left: 60px;
+}
+
+
+#mainmain {
+	border-bottom: 1px solid;
+}
+#song-intro {
+	height: 380px;
+}
+#song-intro p {
+	display: block;
+	font-size: 20px;
+	margin-left: 383px;
+}
+#album-pic {
+	display: block;
+	width: 300px;
+	border: 1px solid;
+	margin-left: 300px;
+}
+#album-intro {
+	margin-bottom: 50px;
+}
+.text pre {
+	font-family: '맑은 고딕';
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 21px;
+	margin-left: 80px;
+	margin-bottom: 20px;
+}
+.lyrics pre {
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+
+#main-aside {
+	width: 278px;
+	float: right;
+	padding: 0 0 0 20px;
+}
+#main-aside h4 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+#main-aside p {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+#intro-name {
+	margin: 20px 20px 0 0;
+}
+#name {
+	display: block;
+	overflow: hidden;
+	height: 80px;
+	margin-bottom: 60px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+#name li {
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	padding: 5px 15px;
+	height: 40px;
+	width: 240px;
+	float: left;
+	border-width: 1px;
+	border-color: black;
+	margin-top: 17px;
+}
+.intro-pic {
+	width: 279px;
+	height: 279px;
+}
+#intro-content {
+	margin-left: 25px;
+}
+.intro-photos-item {
+	margin: 20px 0 0 0;
+}
+
+
+footer {
+	margin-bottom: 20px;
+}
